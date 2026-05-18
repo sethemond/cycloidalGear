@@ -92,6 +92,7 @@ Cycloidal disk profile is driven by the parametric equations implemented as a sk
 ```
 
 **Solidworks Screenshot**
+
 ![Parameters List Screenshot](Images/Parameters%20List%20Screenshot%20-%20May18th.png)
 
 

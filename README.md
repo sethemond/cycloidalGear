@@ -9,9 +9,11 @@ Design, model, print, and test a cycloidal gearbox using stepper motors I alread
 ## Objectives
 
 **A. Skills Showcase**
+
 Demonstrate mechanical engineering design workflow end-to-end: parametric CAD (SolidWorks), FEA (ANSYS), DFM/DFA, tolerance analysis & stackup, GD&T (ASME Y14.5), and engineering documentation.
 
 **B. Actual Build**
+
 This parametric gearbox is intended to be the primary gearbox platform for a robotic arm intended for large-format 3D printing, CNC machining, and general home manufacturing use. Needs to be practical, parametric, semi-modular, printable, and very low cost. Ideally, zero to few parts need to be purchased (effective budget: $0).
 
 ---
@@ -71,6 +73,7 @@ Cycloidal disk profile is driven by the parametric equations implemented as a sk
 **Current CAD Parameters list:**
 *SolidWorks parameters are all linked to an external text file to allow all sub-components/parts to reference the same global parameters list*
 
+```
 "608_OD"= 22
 "608_ID"= 8
 "608_h"= 7
@@ -86,6 +89,7 @@ Cycloidal disk profile is driven by the parametric equations implemented as a sk
 "d_disk"= "d_p" + 2 * "d_h"
 "D_pin"= "d_disk" * "N_pin" / "i"
 "eccent_sanity"= IIF ( ( "Eccent" < ( ( "D_pin" / "N_pin" ) ) / 2 ) , 1 , 0 )
+```
 
 **Solidworks Screenshot**
 ![Parameters List Screenshot](Images/Parameters%20List%20Screenshot%20-%20May18th.png)
@@ -97,16 +101,18 @@ Cycloidal disk profile is driven by the parametric equations implemented as a sk
 
 ## Current Status
 
+**Completed**
 - [x] Project parameters defined
 - [x] Cycloidal gear equations derived and verified
 - [x] Parametric sketch created in SolidWorks
-
 - [x] Housing base part design
 - [x] Cycloidal disk part design
+
+**Remaining**
 - [ ] Input shaft part design
 - [ ] 608 bearing model imported
 - [ ] Mechanical mating + basic motion analysis
-- [ ] Tolerance / fit review (tight tolerances to limit backlash are flagged as a concern for 3D printing)
+- [ ] Tolerance / fit review *(tight tolerances to limit backlash are flagged as a concern for 3D printing)*
 - [ ] FEA validation (strength + fatigue)
 - [ ] GD&T drawings
 - [ ] Print, assemble, and test
